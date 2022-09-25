@@ -24,7 +24,7 @@ type ArchiveOptions = record {
 type BlockHeight = nat64;
 
 // A number associated with a transaction.
-// Can be set by the caller in `send` call as a correlation identifier.
+// Can be set by the caller in `send` call as a correlation identifier.  
 type Memo = nat64;
 
 // Account identifier encoded as a 64-byte ASCII hex string.
