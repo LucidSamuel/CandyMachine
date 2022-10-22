@@ -1,4 +1,4 @@
-type propertyVariant = record { text; GenericValue };
+type propertyVariant = record { text; text };
 
 type StringResponseDto = variant { "Ok": opt text; "Err": opt text };
 
