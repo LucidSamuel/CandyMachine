@@ -31,6 +31,15 @@ export type TransferError = {
     InsufficientFunds: { balance : Tokens };
 };
 
+export type TransferSendResponse = {
+    TxTooOld: { allowed_window_nanos : nat };
+    TxDuplicate: { duplicate_of : nat };
+    TxCreatedInFuture: { balance : Tokens };
+    TxCreatedFunds: { duplicate_of : Tokens };
+    InsufficientFunds: { balance : Tokens };
+    BadFee:{ duplicate_of : nat };
+}
+
 export type TransferSendResponse = Variant<{
     Ok: nat,
     Err: TransferError
